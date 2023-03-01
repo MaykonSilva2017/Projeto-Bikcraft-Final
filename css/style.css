@@ -38,12 +38,21 @@ a {
     padding: 16px 0px;
     display: inline-block;
     font-size: 18px;
+    position: relative;
 }
 
 .header-menu a::after {
     content: "";
     display: block;
     height: 2px;
+    width: 0;
+    background: #ffffff;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover:after {
     width: 100%;
 }
 
@@ -60,6 +69,10 @@ a {
         background: #111111;
         padding: 12px 16px;
         border-radius: 4px;
+    }
+
+    .header-menu a:after {
+        display: none;
     }
 
     .header-menu a:hover {
