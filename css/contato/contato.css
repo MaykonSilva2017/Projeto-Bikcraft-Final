@@ -1,5 +1,5 @@
 #contato {
-    background: var(--cor-1);
+    background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0%);
 }
 
 .contato {
@@ -44,6 +44,53 @@
     padding-left: 28px;
 }
 
+.contato-meios a:hover {
+    color: var(--cor-0);
+}
+
 .contato-meios a:first-child {
     background: url(../../img/icones/email.svg) no-repeat 0 2px;
+}
+
+.contato-meios a:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.contato-meios a:nth-child(3) {
+    background: url(../../img/icones/telefone.svg) no-repeat 0 2px;
+    margin-bottom: 60px;
+}
+
+.contato-redes {
+    display: flex;
+    gap: 32px;
+    padding-left: 28px;
+}
+
+@media (max-width: 800px) {
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-dados,
+    .contato-formulario {
+        padding: 20px;
+    }
+
+    .contato-dados {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .contato-formulario {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .contato-dados h2,
+    .contato-meios a:nth-child(3) {
+        margin-bottom: 32px;
+    }
+
+    .contato-redes {
+        margin-bottom: 12px;
+    }
 }
