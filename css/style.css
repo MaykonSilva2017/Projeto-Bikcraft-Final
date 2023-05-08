@@ -28,12 +28,12 @@
 @import "./seguros/vantagens.css";
 @import "./seguros/perguntas.css";
 
-/* Termos */
-@import "./termos/termos.css";
-
 /* Contato */
 @import "./contato/contato.css";
 @import "./contato/lojas.css";
 
-/* Orcamento */
+/* Contato */
 @import "./orcamento/orcamento.css";
+
+/* Termos */
+@import "./termos/termos.css";
