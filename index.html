@@ -9,6 +9,7 @@
             name="description"
             content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft."
         />
+
         <link rel="preload" href="./css/style.css" as="style" />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
@@ -38,21 +39,26 @@
         <main class="introducao-bg">
             <div class="introducao container">
                 <div class="introducao-conteudo">
-                    <h1 class="font-1-xxl cor-0">
+                    <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">
                         Bicicletas feitas sob medida<span class="cor-p1"
                             >.</span
                         >
                     </h1>
-                    <p class="font-2-l cor-5">
+                    <p class="font-2-l cor-5 fadeInDown" data-anime="400">
                         Bicicletas elétricas de alta precisão e qualidade,
                         feitas sob medida para você. Explore o mundo na sua
                         velocidade com a Bikcraft.
                     </p>
-                    <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+                    <a
+                        class="botao fadeInDown"
+                        data-anime="600"
+                        href="./bicicletas.html"
+                        >Escolha a sua</a
+                    >
                 </div>
-                <picture>
+                <picture data-anime="800" class="fadeInDown">
                     <source
-                        media="(max-width:800px)"
+                        media="(max-width: 800px)"
                         srcset="./img/bicicletas/nimbus.jpg"
                     />
                     <img
@@ -75,9 +81,9 @@
                     <a href="./bicicletas/magic.html">
                         <img
                             src="./img/bicicletas/magic-home.jpg"
+                            alt="Bicicleta preta"
                             width="920"
                             height="1040"
-                            alt="Bicicleta preta"
                         />
                         <h3 class="font-1-xl">Magic Might</h3>
                         <span class="font-2-m cor-8">R$ 2499</span>
@@ -87,9 +93,9 @@
                     <a href="./bicicletas/nimbus.html">
                         <img
                             src="./img/bicicletas/nimbus-home.jpg"
+                            alt="Bicicleta preta"
                             width="920"
                             height="1040"
-                            alt="Bicicleta preta"
                         />
                         <h3 class="font-1-xl">Nimbus Stark</h3>
                         <span class="font-2-m cor-8">R$ 4999</span>
@@ -99,9 +105,9 @@
                     <a href="./bicicletas/nebula.html">
                         <img
                             src="./img/bicicletas/nebula-home.jpg"
+                            alt="Bicicleta preta"
                             width="920"
                             height="1040"
-                            alt="Bicicleta preta"
                         />
                         <h3 class="font-1-xl">Nebula Cosmic</h3>
                         <span class="font-2-m cor-8">R$ 3999</span>
@@ -136,7 +142,7 @@
                                 src="./img/icones/eletrica.svg"
                                 width="24"
                                 height="24"
-                                alt="icones"
+                                alt=""
                             />
                             <h3 class="font-1-m cor-0">Motor Elétrico</h3>
                             <p class="font-2-s cor-5">
@@ -150,7 +156,7 @@
                                 src="./img/icones/rastreador.svg"
                                 width="24"
                                 height="24"
-                                alt="icones"
+                                alt=""
                             />
                             <h3 class="font-1-m cor-0">Rastreador</h3>
                             <p class="font-2-s cor-5">
@@ -165,8 +171,8 @@
                     <img
                         src="./img/fotos/tecnologia.jpg"
                         width="1200"
-                        height="920"
-                        alt="icones"
+                        height="1920"
+                        alt=""
                     />
                 </div>
             </div>
@@ -181,65 +187,65 @@
                 <li>
                     <img
                         src="./img/parceiros/caravan.svg"
+                        alt="Caravan"
                         width="140"
                         height="38"
-                        alt="caravan"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/ranek.svg"
+                        alt="Ranek"
                         width="149"
                         height="36"
-                        alt="ranek"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/handel.svg"
-                        width="139"
+                        alt="Handel"
+                        width="140"
                         height="50"
-                        alt="handel"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/dogs.svg"
+                        alt="Dogs"
                         width="152"
                         height="39"
-                        alt="dogs"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/lescone.svg"
+                        alt="LeScone"
                         width="208"
                         height="41"
-                        alt="lescone"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/flexblog.svg"
+                        alt="FlexBlog"
                         width="165"
                         height="38"
-                        alt="flexblog"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/wildbeast.svg"
+                        alt="Wildbeast"
                         width="196"
                         height="34"
-                        alt="wildbeast"
                     />
                 </li>
                 <li>
                     <img
                         src="./img/parceiros/surfbot.svg"
+                        alt="Surfbot"
                         width="200"
                         height="49"
-                        alt="surfbot"
                     />
                 </li>
             </ul>
@@ -374,6 +380,8 @@
                 </p>
             </div>
         </footer>
+
+        <script src="./js/plugins/simple-anime.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
